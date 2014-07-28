@@ -1,0 +1,25 @@
+{
+  "name": "husl-stylus",
+  "description": "HUSL as Stylus plugin",
+  "keywords": ["color", "color space", "CIE", "RGB", "stylus", "HUSL", "HSL"],
+  "version": "1.0.0",
+  "author": "Alexei Boronine <alexei@boronine.com>",
+  "main": "husl.js",
+  "files": ["husl.js"],
+  "repository": {
+    "type" : "git",
+    "url" : "http://github.com/boronine/husl-stylus.git"
+  },
+  "homepage": "http://www.boronine.com/husl/",
+  "dependencies": {
+    "husl": "4.0.0"
+  },
+  "devDependencies": {
+    "coffee-script": "*",
+    "mocha": "*",
+    "stylus": "*"
+  },
+  "scripts": {
+    "test": "mocha --compilers coffee:coffee-script/register"
+  }
+}
