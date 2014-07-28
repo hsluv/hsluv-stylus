@@ -12,7 +12,7 @@
   },
   "homepage": "http://www.boronine.com/husl/",
   "dependencies": {
-    "husl": "4.0.0"
+    "husl": "*"
   },
   "devDependencies": {
     "coffee-script": "*",
