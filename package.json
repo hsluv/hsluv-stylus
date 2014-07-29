@@ -1,8 +1,8 @@
 {
   "name": "husl-stylus",
   "description": "HUSL as Stylus plugin",
-  "keywords": ["color", "color space", "CIE", "RGB", "stylus", "HUSL", "HSL"],
-  "version": "1.0.1",
+  "keywords": ["stylus", "HUSL"],
+  "version": "1.0.2",
   "author": "Alexei Boronine <alexei@boronine.com>",
   "main": "husl.js",
   "files": ["husl.js"],
