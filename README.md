@@ -1,3 +1,15 @@
+[HUSL](http://www.boronine.com/husl/) is a perceptually-uniform alternative to HSL. Here is some Stylus code that generates 6 tiles with well-contrasting complementary colors:
+
+```Stylus
+tile(hue)
+  background-color husl(hue, 90%, 80%)
+  color husl(hue + 190deg, 90%, 10%)
+
+for hue in 0deg 30deg 60deg 90deg 120deg 150deg
+  .colored-tile-{hue}
+    tile(hue)
+```
+
 # Usage
 
 Install the plugin:
@@ -9,38 +21,27 @@ npm install husl-stylus
 To use from command line, run stylus like this:
 
 ```Shell
-stylus < input.styl > output.css -u husl-stylus
+stylus -u husl-stylus < input.styl
 ```
 
 To use programmatically, do this:
 
 ```JavaScript
-var connect = require('connect')
-  , stylus = require('stylus')
-  , husl = require('husl-stylus');
+var stylus = require('stylus');
+var huslStylus = require('husl-stylus');
 
-var server = connect();
-
-function compile(str, path) {
-  return stylus(str)
-    .set('filename', path)
-    .set('compress', true)
-    .use(husl());
+function renderWithHUSL(str) {
+    return stylus(str).use(huslStylus()).render();
 }
-
-server.use(stylus.middleware({
-    src: __dirname
-  , compile: compile
-}));
 ```
 
-Now you can use HUSL in your stylesheets!
+This module adds two following two Stylus functions that let you specify colors using HUSL and its pastel variant HUSLp:
 
-```Stylus
-.tinted(hue)
-    background-color husl(hue, 90, 80)
-    color husl(hue, 90, 10)
-```
+**husl(H, S, L, [A])**
+
+**huslp(H, S, L, [A])**
+
+*H* represents hue as a number between 0 and 360, *S* represents saturation as a number between 0 and 100 and *L* represents lightness as a number between 0 and 100. *A* is an optional value between 0 and 1 representing the alpha channel.
 
 # License
 
