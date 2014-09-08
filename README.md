@@ -1,4 +1,4 @@
-[HUSL](http://www.boronine.com/husl/) is a perceptually-uniform alternative to HSL. Here is some Stylus code that generates 6 tiles with well-contrasting complementary colors:
+[HUSL](http://www.boronine.com/husl/) is a perceptually-uniform alternative to HSL. Here is some [Stylus](http://learnboost.github.io/stylus/) code that generates 6 tiles with well-contrasting complementary colors:
 
 ```Stylus
 tile(hue)
