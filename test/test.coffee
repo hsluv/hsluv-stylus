@@ -16,7 +16,7 @@ describe 'Stylus integration', ->
     css = """
     .someclass {
       color: rgba(0,0,0,0.1);
-      color: #1d1b1a;
+      color: #1d1b19;
       color: rgba(50,48,47,0.3);
       color: #484644;
     }
@@ -25,4 +25,4 @@ describe 'Stylus integration', ->
     stylus = require 'stylus'
     stylus(styl).use(husl()).render (err, test_css) ->
       throw err if err
-      assert.equal css, test_css
+      assert.equal test_css, css
