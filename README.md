@@ -1,3 +1,5 @@
+[![Package Version](https://img.shields.io/npm/v/husl-stylus.svg)](https://www.npmjs.com/package/husl-stylus)
+
 [HUSL](http://www.boronine.com/husl/) is a perceptually-uniform alternative to HSL. Here is some [Stylus](http://learnboost.github.io/stylus/) code that generates 6 tiles with well-contrasting complementary colors:
 
 ```Stylus
