@@ -15,11 +15,9 @@
     "husl": "^6.0.1"
   },
   "devDependencies": {
-    "coffee-script": "*",
-    "mocha": "*",
     "stylus": "*"
   },
   "scripts": {
-    "test": "mocha --compilers coffee:coffee-script/register"
+    "test": "node test.js"
   }
 }
