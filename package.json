@@ -1,18 +1,19 @@
 {
-  "name": "husl-stylus",
-  "description": "HUSL as Stylus plugin",
-  "keywords": ["stylus", "HUSL"],
-  "version": "1.0.4",
+  "name": "hsluv-stylus",
+  "description": "HSLuv as Stylus plugin",
+  "keywords": ["stylus", "HSLuv", "HPLuv", "HSL", "colors"],
+  "version": "0.0.1",
   "author": "Alexei Boronine <alexei@boronine.com>",
-  "main": "husl.js",
-  "files": ["husl.js"],
+  "license": "MIT",
+  "main": "hsluv-stylus.js",
+  "files": ["hsluv-stylus.js"],
   "repository": {
     "type" : "git",
-    "url" : "http://github.com/boronine/husl-stylus.git"
+    "url" : "http://github.com/hsluv/hsluv-stylus.git"
   },
-  "homepage": "http://www.boronine.com/husl/",
+  "homepage": "http://www.hsluv.org",
   "dependencies": {
-    "husl": "^6.0.1"
+    "hsluv": "^0.0.1"
   },
   "devDependencies": {
     "stylus": "*"
