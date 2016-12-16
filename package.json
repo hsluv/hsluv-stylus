@@ -2,7 +2,7 @@
   "name": "husl-stylus",
   "description": "HUSL as Stylus plugin",
   "keywords": ["stylus", "HUSL"],
-  "version": "1.0.3",
+  "version": "1.0.4",
   "author": "Alexei Boronine <alexei@boronine.com>",
   "main": "husl.js",
   "files": ["husl.js"],
